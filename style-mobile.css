@@ -17,7 +17,7 @@ body{
   width: 100vw;
   overflow-x: hidden;
   /* background-position: bottom; */
-  background-image: url('/immagini/tutto cielo fondale sito.png');
+  background-image: url('immagini/tutto cielo fondale sito.png');
   background-size: cover;
   height: 100%;
   font-family: "textfont";
@@ -115,7 +115,7 @@ a{
   right: -40vw;
   background-color: pink;
   z-index: 100;
-  background-image: url('/immagini/fondale sito.png');
+  background-image: url('immagini/fondale sito.png');
   background-repeat: repeat-x;
 	background-position:
 		0 20%;
@@ -372,7 +372,7 @@ a{
   .link_container{
     background-color: #00c0ff;
     box-shadow: 50px 50px grey;
-    background-image: url('/immagini/texture_link.png');
+    background-image: url('immagini/texture_link.png');
 
   }
 
@@ -412,7 +412,7 @@ a{
   .text_container{
     background-color: #fab761;
     box-shadow: 50px 50px grey;
-    background-image: url('/immagini/texture.png');
+    background-image: url('immagini/texture.png');
     color: white;
   }
 
@@ -456,7 +456,7 @@ a{
     position: relative;
     width: inherit;
     background-color: #fab761;
-    background-image: url('/immagini/texture.png');
+    background-image: url('immagini/texture.png');
     /* object-fit: scale-down; */
 
 
@@ -835,7 +835,7 @@ a{
   position: relative;
   width: inherit;
   background-color: #fab761;
-  background-image: url('/immagini/texture.png');
+  background-image: url('immagini/texture.png');
   /* object-fit: scale-down; */
 
 
