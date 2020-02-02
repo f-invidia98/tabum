@@ -194,6 +194,7 @@ a {
   width: 100%;
   position: absolute;
   bottom: 2vw;
+  z-index: 2;
 }
 
 .home a {
