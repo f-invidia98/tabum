@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'titlefont';
-  src: url('adlib-regular-webfont.woff') format("truetype");
+  src: url('/tabum/adlib-regular-webfont.woff') format("truetype");
 }
 
 @font-face {
   font-family: 'textfont';
-  src: url('font/CrimsonText-Regular.ttf') format("truetype");
+  src: url('/tabum/font/CrimsonText-Regular.ttf') format("truetype");
 }
 
 html {
@@ -16,7 +16,7 @@ body {
   width: 100vw;
   overflow-x: hidden;
   /* background-position: bottom; */
-  background-image: url('/immagini/tutto cielo fondale sito.png');
+  background-image: url('/tabum/immagini/tutto cielo fondale sito.png');
   background-size: cover;
   height: 100%;
   font-family: "textfont";
@@ -76,7 +76,7 @@ a {
   right: -35vw;
   background-color: #3cb4a4;
   z-index: 100;
-  /* background-image: url('/immagini/fondale sito.png'); */
+  /* background-image: url('/tabum/immagini/fondale sito.png'); */
   background-repeat: repeat-x;
   background-position:
     0 20%;
@@ -287,7 +287,7 @@ a {
 .link_container {
   background-color: #00c0ff;
   box-shadow: 50px 50px grey;
-  background-image: url('/immagini/texture_link.png');
+  background-image: url('/tabum/immagini/texture_link.png');
   color: white;
 }
 
@@ -320,7 +320,7 @@ a {
 .text_container {
   background-color: #fab761;
   box-shadow: 50px 50px grey;
-  background-image: url('/immagini/texture.png');
+  background-image: url('/tabum/immagini/texture.png');
   color: white;
 }
 
@@ -621,7 +621,7 @@ a {
   position: relative;
   width: inherit;
   background-color: #fab761;
-  background-image: url('/immagini/texture.png');
+  background-image: url('/tabum/immagini/texture.png');
   /* object-fit: scale-down; */
 }
 
@@ -629,7 +629,7 @@ a {
   position: relative;
   width: inherit;
   background-color: #fab761;
-  background-image: url('/immagini/texture.png');
+  background-image: url('/tabum/immagini/texture.png');
   /* object-fit: scale-down; */
 }
 
