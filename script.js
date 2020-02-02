@@ -225,42 +225,42 @@ var scene4 = new ScrollMagic.Scene({
 $(function() {
   $(".facebook").hover(
     function() {
-      $(this).attr("src", "/immagini/contatti/facebook.gif");
+      $(this).attr("src", "immagini/contatti/facebook.gif");
     },
     function() {
-      $(this).attr("src", "/immagini/contatti/facebook.png");
+      $(this).attr("src", "immagini/contatti/facebook.png");
     }
   );
   $(".twitter").hover(
     function() {
-      $(this).attr("src", "/immagini/contatti/twitter.gif");
+      $(this).attr("src", "immagini/contatti/twitter.gif");
     },
     function() {
-      $(this).attr("src", "/immagini/contatti/twitter.png");
+      $(this).attr("src", "immagini/contatti/twitter.png");
     }
   );
   $(".mail").hover(
     function() {
-      $(this).attr("src", "/immagini/contatti/mail.gif");
+      $(this).attr("src", "immagini/contatti/mail.gif");
     },
     function() {
-      $(this).attr("src", "/immagini/contatti/mail.png");
+      $(this).attr("src", "immagini/contatti/mail.png");
     }
   );
   $(".youtube").hover(
     function() {
-      $(this).attr("src", "/immagini/contatti/youtube.gif");
+      $(this).attr("src", "immagini/contatti/youtube.gif");
     },
     function() {
-      $(this).attr("src", "/immagini/contatti/youtube.png");
+      $(this).attr("src", "immagini/contatti/youtube.png");
     }
   );
   $(".insta").hover(
     function() {
-      $(this).attr("src", "/immagini/contatti/insta.gif");
+      $(this).attr("src", "immagini/contatti/insta.gif");
     },
     function() {
-      $(this).attr("src", "/immagini/contatti/insta.png");
+      $(this).attr("src", "immagini/contatti/insta.png");
     }
   );
 });
