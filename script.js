@@ -27,7 +27,7 @@ var tween1 = new TimelineMax()
     left: "35%",
     scale: 2
   }, 0, 0)
-  .staggerTo(objecto[0], 10, {
+  .staggerTo(objecto[0], 100, {
     scale: 2
   }, 2, "+=2")
   .staggerTo(nome_pers[0], 2, {
