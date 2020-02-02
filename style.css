@@ -267,7 +267,7 @@ a {
 
 .text_domanda {
   position: relative;
-  font-size: 4.1vw;
+  font-size: 3vw;
   font-style: italic;
   height: auto;
   margin-bottom: 4vw;
@@ -283,7 +283,7 @@ a {
 .text_link {
   font-family: 'titlefont';
   position: relative;
-  font-size: 3.12vw;
+  font-size: 2vw;
   margin-bottom: -5vw;
 }
 
