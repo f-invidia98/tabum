@@ -1,0 +1,789 @@
+@font-face {
+  font-family: 'titlefont';
+  src: url('adlib-regular-webfont.woff') format("truetype");
+}
+
+@font-face {
+  font-family: 'textfont';
+  src: url('font/CrimsonText-Regular.ttf') format("truetype");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  /* background-position: bottom; */
+  background-image: url('/immagini/tutto cielo fondale sito.png');
+  background-size: cover;
+  height: 100%;
+  font-family: "textfont";
+  line-height: 1.3;
+}
+
+.contatti_img {
+  position: absolute;
+  bottom: 0vw;
+  /* height: 16%; */
+  object-fit: cover;
+  height: 22vw;
+  object-position: top;
+}
+
+img {
+  width: inherit;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+/* *{
+  border: 1px solid black;
+} */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* menu, uguale ovunque */
+.container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  padding-top: 10vh;
+  height: fit-content;
+}
+
+.thome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15vw;
+  height: 8.3vw;
+}
+
+.menu {
+  width: 35vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  color: white;
+  right: -35vw;
+  background-color: #3cb4a4;
+  z-index: 100;
+  /* background-image: url('/immagini/fondale sito.png'); */
+  background-repeat: repeat-x;
+  background-position:
+    0 20%;
+  padding-left: 3vw;
+  padding-top: 2vw;
+  padding-right: 3vw;
+  padding-bottom: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  transition: all 0.6s ease-out;
+  animation: 50s para infinite linear;
+}
+
+.tmenu {
+  position: absolute;
+  top: 0px;
+  left: -6vw;
+  width: 6vw;
+  object-fit: contain;
+  z-index: 300;
+}
+
+.tmenu_reverse {
+  display: none;
+}
+
+.menu div {
+  font-size: 4vw;
+  font-family: 'titlefont';
+}
+
+.botton1, .botton2, .botton3, .botton4 {
+  padding: 3vw;
+}
+
+.contatti {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  bottom: 1vw;
+  left: -3vw;
+  padding-right: 100%;
+  padding-top: 0.7vw;
+  padding-bottom: 0.7vw;
+  /* background-image: url("/immagini/fondale sito.png"); */
+  background-position: left;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contatti img {
+  width: 7%;
+}
+
+.contatti div {
+  font-size: 1.5vw;
+  ;
+  margin-left: 1.3vw;
+  color: white;
+}
+
+.home_container {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  padding-top: 3vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.home_container img {
+  position: absolute;
+}
+
+.prato {
+  bottom: 0;
+  bottom: -7vw;
+  width: 110vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.logo img {
+  display: flex;
+  justify-content: center;
+  width: 53%;
+  top: 7vh;
+}
+
+.cielo {
+  height: 90%;
+  margin-top: -2vh;
+  width: 90%;
+}
+
+.home {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  bottom: 2vw;
+}
+
+.home a {
+  width: 50%;
+}
+
+.tasti_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasti_home div {
+  text-align: center;
+  width: 100%;
+  padding: 1.3vw;
+}
+
+.tasti_home img {
+  width: 55%;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* TESTI */
+/* TITOLONI */
+.title {
+  position: relative;
+  margin-left: 14vw;
+  font-size: 9.4vw;
+  color: white;
+  font-family: 'titlefont';
+  line-height: 1;
+  /* margin-bottom: 7.5vw; */
+}
+
+/* TITOLINI */
+.little {
+  font-size: 3.6vw;
+  margin-bottom: 0.3vw;
+  color: white;
+  font-family: 'titlefont';
+}
+
+.very_little {
+  padding: 1vw;
+  font-size: 1vw;
+  margin-bottom: 1.2vw;
+  color: white;
+  font-family: 'titlefont';
+}
+
+/* GRANDEZZA FONT E POSITION */
+.text {
+  position: relative;
+  font-size: 3.12vw;
+  height: auto;
+}
+
+.text_scheda {
+  position: relative;
+  font-size: 2.3vw;
+  height: auto;
+}
+
+.text_domanda {
+  position: relative;
+  font-size: 4.1vw;
+  font-style: italic;
+  height: auto;
+  margin-bottom: 4vw;
+}
+
+.text_risposta {
+  position: relative;
+  font-size: 3.12vw;
+  margin-bottom: 20vh;
+  height: auto;
+}
+
+.text_link {
+  font-family: 'titlefont';
+  position: relative;
+  font-size: 3.12vw;
+  margin-bottom: -5vw;
+}
+
+.link_container {
+  background-color: #00c0ff;
+  box-shadow: 50px 50px grey;
+  background-image: url('/immagini/texture_link.png');
+  color: white;
+}
+
+.qa_container_1 {
+  background-color: #fa981b;
+  box-shadow: 50px 50px grey;
+  color: white;
+}
+
+.qa_container_2 {
+  background-color: #733340;
+  box-shadow: 50px 50px grey;
+  color: white;
+}
+
+.shadow_link:hover {
+  filter:
+    /* drop-shadow(1vw 0 0.5vw black)
+              drop-shadow(-2vw 0 0.5vw black)
+              drop-shadow(0 1vw 0.5vw black) */
+    drop-shadow(1vw 1.2vw 0 black);
+}
+
+.black {
+  color: black;
+  margin-bottom: 4vw;
+}
+
+/* CHI SIAMO, CONTENITORI TESTO */
+.text_container {
+  background-color: #fab761;
+  box-shadow: 50px 50px grey;
+  background-image: url('/immagini/texture.png');
+  color: white;
+}
+
+.text_container2 {
+  background-color: #e56a24;
+  box-shadow: 50px 50px grey;
+  color: white;
+}
+
+/* CHI SIAMO, CONTENITORI PER OMBRA POSIZIONE */
+.text1_position {
+  position: relative;
+  margin-top: 2.6vw;
+}
+
+.text2_position {
+  position: relative;
+  /* top:  60.4vw; */
+}
+
+/* TABù, MARGINE */
+.link_position {
+  padding-left: 15.5vw;
+  padding-right: 17vw;
+  padding-bottom: 11vw;
+}
+
+/* CHI SIAMO, PADDING */
+.text1_padding {
+  padding-left: 15.5vw;
+  padding-right: 17vw;
+  padding-top: 4vw;
+  padding-bottom: 6vw;
+}
+
+.text2_padding {
+  padding-left: 47vw;
+  padding-right: 15vw;
+  padding-top: 8vw;
+  padding-bottom: 6vw;
+}
+
+/* FORME */
+.path1 {
+  clip-path: url(#svgPath);
+}
+
+.path2 {
+  clip-path: url(#svgPath2);
+}
+
+.path3 {
+  clip-path: url(#svgPath3);
+}
+
+.path4 {
+  clip-path: url(#svgPath4);
+}
+
+.path5 {
+  clip-path: url(#svgPath5);
+}
+
+.path6 {
+  clip-path: url(#svgPath6);
+}
+
+.path7 {
+  clip-path: url(#svgPath7);
+}
+
+.path8 {
+  clip-path: url(#svgPath8);
+}
+
+.path_link {
+  clip-path: url(#triangolo);
+}
+
+.path_link_reverse {
+  clip-path: url(#triangolo_reverse);
+}
+
+.box-personaggi {
+  margin-top: 6vw;
+  height: 10vw;
+}
+
+/* OMBRA FORME */
+.shadow {
+  -webkit-filter: drop-shadow(2vw 1.6vw #ab6f22);
+  filter: drop-shadow(2vw 1.6vw #ab6f22);
+  width: 100%;
+}
+
+.shadow2 {
+  -webkit-filter: drop-shadow(2vw 1.6vw black);
+  filter: drop-shadow(2vw 1.6vw black);
+  width: 100%;
+}
+
+.rect_pers {
+  width: 100%;
+  height: 10vw;
+  background-color: #f7e6c9;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* IMMAGINI */
+/* CHI SIAMO, IMMAGINE OLIVIA  */
+.immagine_1 {
+  position: absolute;
+  left: 6vw;
+  top: 17vw;
+  /* margin-top: 74.2vw; */
+  width: 29vw;
+}
+
+.immagine_1 img {
+  position: relative;
+  width: inherit;
+  /* object-fit: scale-down; */
+}
+
+/* CATALOGO, IMMAGINI COPERTINE  */
+.copertine_container {
+  position: relative;
+  /* width: 100%; */
+  padding-left: 7.5vw;
+  padding-right: 7.5vw;
+  padding-top: 7.5vw;
+  display: flex;
+}
+
+.copertina {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+}
+
+.copertina img:hover {
+  -webkit-filter: drop-shadow(0.5vw 0 0 #ffffff) drop-shadow(-0.5vw 0 0 #ffffff) drop-shadow(0 -0.5vw 0 #ffffff) drop-shadow(0 0.5vw 0 #ffffff);
+  filter: drop-shadow(0.5vw 0 0 #ffffff) drop-shadow(-0.5vw 0 0 #ffffff) drop-shadow(0 -0.5vw 0 #ffffff) drop-shadow(0 0.5vw 0 #ffffff);
+}
+
+.bordoSelect {
+  -webkit-filter: drop-shadow(0.5vw 0 0 #ffffff) drop-shadow(-0.5vw 0 0 #ffffff) drop-shadow(0 -0.5vw 0 #ffffff) drop-shadow(0 0.5vw 0 #ffffff);
+  filter: drop-shadow(0.5vw 0 0 #ffffff) drop-shadow(-0.5vw 0 0 #ffffff) drop-shadow(0 -0.5vw 0 #ffffff) drop-shadow(0 0.5vw 0 #ffffff);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* CATALOGO */
+.catalogo_schermata {
+  height: 90vh;
+}
+
+/* CONTAINER SCHEDA FLEX  */
+.schedaLibro {
+  position: relative;
+  /* s */
+  /* padding-bottom: 20vh; */
+  background-color: #fff4e5;
+  padding-top: 7vw;
+}
+
+.scheda_container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 14vw;
+  padding-right: 14vw;
+  padding-bottom: 17vw;
+}
+
+.scheda_container div {
+  /* display: flex; */
+  width: 45%;
+}
+
+.mockup img {
+  width: 100%;
+}
+
+.immagine_libro {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 12vw;
+}
+
+.immagine_libro img {
+  width: 30%;
+}
+
+.immagine_libro img:hover {
+  -webkit-filter: drop-shadow(6px 0 0 white) drop-shadow(-6px 0 0 white) drop-shadow(0 -6px 0 white) drop-shadow(0 6px 0 white);
+  filter: drop-shadow(6px 0 0 white) drop-shadow(-6px 0 0 white) drop-shadow(0 -6px 0 white) drop-shadow(0 6px 0 white);
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* TABù */
+/* IMMAGINI PER TABù  */
+.immagine_2 {
+  position: absolute;
+  right: 0vw;
+  width: 29vw;
+}
+
+.immagine_2 img {
+  position: absolute;
+  right: 0;
+  /* object-fit: scale-down; */
+}
+
+.dialogo {
+  display: flex;
+  flex-direction: column;
+  padding-left: 14vw;
+  padding-right: 14vw;
+  padding-bottom: 17vw;
+}
+
+/* DIALOGO PER TABù  */
+.sinistra_padding {
+  padding-left: 15.5vw;
+  padding-right: 26vw;
+  padding-top: 4vw;
+  padding-bottom: 6vw;
+  text-align: left;
+}
+
+.destra_padding {
+  padding-left: 26vw;
+  padding-right: 17vw;
+  padding-top: 4vw;
+  padding-bottom: 6vw;
+  text-align: right;
+}
+
+/* LINK PADDING PER TABù  */
+.link_padding_sx {
+  padding-left: 6.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 25vw;
+  text-align: left;
+}
+
+.link_padding_dx {
+  padding-right: 6.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 25vw;
+  text-align: right;
+}
+
+.distintivo {
+  width: 8vw;
+  display: inline;
+  position: absolute;
+  left: 3vw;
+  top: 5vw;
+}
+
+.blokko {
+  height: 7.5vw;
+}
+
+/* DA SISTEMARE */
+.big-pers img {
+  position: relative;
+  width: inherit;
+  /* object-fit: scale-down; */
+}
+
+.text-pers {
+  position: relative;
+  width: inherit;
+  background-color: #fab761;
+  background-image: url('/immagini/texture.png');
+  /* object-fit: scale-down; */
+}
+
+.text-pers-2 {
+  position: relative;
+  width: inherit;
+  background-color: #fab761;
+  background-image: url('/immagini/texture.png');
+  /* object-fit: scale-down; */
+}
+
+.small-pers img {
+  position: relative;
+  width: inherit;
+  /* object-fit: scale-down; */
+}
+
+.second-section {
+  position: relative;
+  height: 200vh;
+  padding-top: 7vw;
+  padding-bottom: 15vw;
+}
+
+.container-pers {
+  position: sticky;
+  top: 0;
+  padding-top: 6vw;
+}
+
+.second_par {
+  position: relative;
+  margin-top: 8.2vw;
+}
+
+.second_par div {
+  display: inline-block;
+}
+
+/* img{
+  position: absolute;
+  top:100;
+  left:300;
+
+} */
+.scroll-personaggi div {
+  display: block;
+  width: 10vw;
+  position: absolute;
+}
+
+.nome-personaggi {
+  margin-bottom: 16vw;
+  position: relative;
+}
+
+.nome-personaggi div {
+  display: block;
+  position: absolute;
+}
+
+.prova-cont img:hover {
+  -webkit-filter: drop-shadow(1px 1px 0 black) drop-shadow(-1px -1px 0 black);
+  filter: drop-shadow(6px 0 0 black) drop-shadow(-6px 0 0 black) drop-shadow(0 -6px 0 black) drop-shadow(0 6px 0 black);
+}
+
+.box-logo {
+  position: sticky;
+  top: 6%;
+  width: initial;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45vh;
+  transform: translate(-10%, 0);
+  padding-top: 6vw;
+}
+
+.box-logo img {
+  width: 40%;
+  /* position: absolute; */
+}
+
+.space {
+  height: 35vw;
+}
+
+@keyframes para {
+  100% {
+    background-position:
+      -5000px 20%,
+      -800px 95%,
+      500px 50%,
+      1000px 100%,
+      400px 0;
+  }
+}
+
+svg {
+  display: block;
+  width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+  margin-top: -10vh;
+}
+
+polygon {
+  transition: fill .15s;
+  box-sizing: border-box;
+}
+
+#image1 {
+  transform: translate(-50%, -50%);
+}
+
+path {
+  background-color: black;
+}
+
+image {
+  transform-origin: center center;
+}
+
+image:hover {
+  transform: scale(1.01);
+}
+
+a:hover .pink {
+  fill: pink;
+}
+
+a:focus .teal,
+a:focus .pink {
+  fill: orange;
+}
+
+.reveal {
+  opacity: 0;
+  -webkit-transform: translateX(-40px);
+  -moz-transform: translateX(-40px);
+  -ms-transform: translateX(-40px);
+  -o-transform: translateX(-40px);
+  transform: translateX(-40px);
+  -webkit-transition: all 0.6s ease-out;
+  -moz-transition: all 0.6s ease-out;
+  -ms-transition: all 0.6s ease-out;
+  -o-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+
+.img_distintivi {
+  position: absolute;
+  top: 5.4%;
+  left: 28%;
+  width: 10%;
+}

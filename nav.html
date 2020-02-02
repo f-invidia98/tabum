@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<a href="./index.html">
+  <div class="thome">
+    <img src="/immagini/tasto_home.png">
+  </div>
+</a>
+
+
+
+<div class="menu">
+  <div class="tmenu">
+    <img class="tmenu_verse" src="/immagini/tasto_menu.png">
+    <img class="tmenu_reverse" src="/immagini/tasto_menu_reverse.png">
+  </div>
+
+<div class="shadow2">
+
+
+  <div class="botton1 path7 text_container2">
+    <a href="./index.html"> Home</a>
+  </div>
+</div>
+<div class="shadow2">
+  <div class="botton2 path8 text_container2">
+    <a href="./chi-siamo.html"> Chi siamo</a>
+
+  </div>
+</div>
+<div class="shadow2">
+  <div class="botton3 path7 text_container2">
+    <a href="./catalogo.html"> Catalogo</a>
+
+  </div>
+</div>
+<div class="shadow2">
+  <div class="botton4 path8 text_container2">
+    <a href="./tabu.html"> Tabù</a>
+
+  </div>
+</div>
+
+</div>
+
+
+<svg>
+
+
+
+  </clipPath>
+
+  <clipPath id="svgPath7" clipPathUnits="objectBoundingBox">
+    <path d="M 0.91 .12 L 0 0.1 L 0 0.80 L .98 .94 Z" />
+  </clipPath>
+
+  <clipPath id="svgPath8" clipPathUnits="objectBoundingBox">
+    <path d="M 0.91 .12 L 0.05 0.1 L 0 0.80 L .78 .94 Z" />
+  </clipPath>
+
+</svg>
+
+<script>
+  var clicks = 0;
+
+  $('.tmenu').click(function() {
+    if (clicks == 0) {
+      $(".menu").css("right", "0");
+      $(".tmenu_verse").css("display", "none");
+      $(".tmenu_reverse").css("display", "block");
+      clicks = 1;
+    } else {
+      $(".menu").css("right", "-35vw");
+      $(".tmenu_verse").css("display", "block");
+      $(".tmenu_reverse").css("display", "none");
+      clicks = 0;
+    }
+  });
+</script>

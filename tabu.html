@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="gsap-public/minified/gsap.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+
+
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+
+  <script type="text/javascript">
+  $(window).on('load resize',function(){
+      if($(window).width() < 950){
+          window.location = "/tabu-mobile.html"
+      }
+  });
+  </script>
+</head>
+
+
+<body onload="setTimeout('redirect()', 300)">
+
+  <div class="container reveal">
+
+    <svg version="1.1" viewbox="0 0 200 110" id="mappa">
+
+      <defs>
+        <pattern id="image1" patternUnits="objectBoundingBox" width="1" height="1" x="0" y="0" preserveAspectRatio="xMidYMid slice">
+          <image width="100%" height="100%" xlink:href="/immagini/distintivi/distintivo morte.png">
+        </pattern>
+      </defs>
+
+
+      <polygon points="97 0 200 30 196 90 93 110 0 90 0 40" preserveAspectRatio="none" fill="#fff"/>
+
+      <a href="#">
+        <path class="teal" d="M 6, 40
+          95, 5
+          102, 26
+          77, 49
+          54, 55z" preserveAspectRatio="none" fill="#7d2f41" />
+      </a>
+      <!-- <a href="#">
+        <path  d="M 6, 40
+          95, 5
+          100, 25
+          80, 49
+          54, 55z" preserveAspectRatio="none"  fill="url(#image1) " />
+      </a> -->
+
+      <a href="#">
+        <path class="teal" d="M 105, 5
+          188, 30
+          140, 55
+          105, 25z" preserveAspectRatio="none" fill="#3bbfc3" />
+      </a>
+
+      <a href="#">
+        <path class="teal" d="M 193, 33
+          188, 85
+          148, 95
+          142, 59z" preserveAspectRatio="none" fill="#c13d85" />
+      </a>
+
+      <a href="#">
+        <path class="teal" d="M 140, 60
+          145, 96
+          92, 106
+          104, 70z" preserveAspectRatio="none" fill="#e8690d" />
+      </a>
+
+      <a href="#">
+        <path class="teal" d="M 104, 29
+          137, 57
+          104, 67
+          70, 60z" preserveAspectRatio="none" fill="#f0bf0f" />
+      </a>
+
+      <a href="#">
+        <path class="teal" d="M 7 44 L 55 60 L 46 97 L 6 88 Z" preserveAspectRatio="none" fill="#159e49" />
+      </a>
+
+      <a href="#">
+        <path class="teal" d="M 96 81 L 88 105 L 51 98 L 58 64 L 93 69 Z" preserveAspectRatio="none" fill="#442675" />
+      </a>
+      <!-- <img src="/immagini/distintivi/distintivo morte.png" class="img_distintivi"> -->
+
+      <!-- <path class="teal" d="M3, 35 46, 5 47, 30 40, 48 27, 50z" fill="white" /> -->
+      <!-- <path class="teal"
+      d="M 6, 40
+          92, 10
+          94, 35
+          80, 53
+          54, 55z" fill="url(#image1)" /> -->
+
+
+      <a href="#morte">
+        <image width="12%" xlink:href="/immagini/distintivi/distintivo morte.png" x="25%" y="20%" /> </a>
+      <a href="#mestruazioni">
+        <image width="12%" xlink:href="/immagini/distintivi/distintivo mestruazioni.png" x="63%" y="18%" /></a>
+      <a href="#gender">
+        <image width="12%" xlink:href="/immagini/distintivi/distintivo gender.png" x="46%" y="35.5%" /></a>
+      <a href="#psicologo">
+        <image width="12%" xlink:href="/immagini/distintivi/distintivo psicologo.png" x="8%" y="54%" /></a>
+      <a href="#abusi">
+        <image width="12%" xlink:href="/immagini/distintivi/distintivo abusi.png" x="31%" y="65%" /></a>
+      <a href="#droga">
+        <image width="12%" xlink:href="/immagini/distintivi/distintivo droga.png" x="55%" y="64%" /></a>
+      <a href="#sesso">
+        <image width="12%" xlink:href="/immagini/distintivi/distintivo sesso.png" x="78%" y="50%" /></a>
+    </svg>
+
+    <!-- <svg version="1.1" viewbox="0 0 100 100">
+
+
+    <defs>
+      <pattern id="image1" patternUnits="objectBoundingBox" width="100%" height="100%" preserveAspectRatio="xMidYMid slice" x="50%" y="50%">
+        <image  width="20" height="20"  xlink:href="/immagini/distintivi/distintivo morte.png">
+      </pattern>
+    </defs>
+
+
+    <a href="#">
+      <polygon class="pink" fill="url(#image1)" points="0 0 100 0 100 100 0 100"/>
+    </a>
+
+
+
+    </svg> -->
+
+
+
+
+    <div id="morte" class="schedaLibro">
+      <div class="distintivo">
+        <img src="/immagini/distintivi/distintivo morte.png">
+      </div>
+      <div class="title little black reveal">
+        Morte
+      </div>
+      <div class="scheda_container reveal">
+        <div class="text_scheda">
+
+          TaBÙM vuole parlare ai bambini di tche spesso i più grandi hanno paura di affrontare. Crediamo che aiutarli a comprendere e razionalizzare alcuni aspetti della vita sia il modo migliore per riuscire ad affrontare tutti i temi
+          importanti.
+
+        </div>
+
+        <img class="immagine_2" src="/immagini/Olivia.png">
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi parlargliene..
+      </div>
+
+
+
+      <div class="text1_position reveal">
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+      </div>
+
+      <div class="text1_position reveal">
+        <div class="sinistra_padding text_domanda qa_container_1 path5">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="destra_padding text_risposta qa_container_2 path6">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+      <div class="text1_position reveal">
+
+
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi saperne di più..
+      </div>
+
+      <div class="link_position reveal">
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Cosa vuol dire morire?
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <div class="blokko">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="title little black reveal">
+        Se vuole una storia..
+      </div>
+
+
+      <div class="immagine_libro reveal">
+        <img src="/immagini/mockup/mockup_martino_2.png">
+
+      </div>
+
+
+
+
+
+
+    </div>
+    <div id="mestruazioni" class="schedaLibro">
+      <div class="distintivo">
+        <img src="/immagini/distintivi/distintivo mestruazioni.png">
+      </div>
+      <div class="title little black reveal">
+        Mestruazioni
+      </div>
+      <div class="scheda_container reveal">
+        <div class="text_scheda">
+
+          TaBÙM vuole parlare ai bambini di tche spesso i più grandi hanno paura di affrontare. Crediamo che aiutarli a comprendere e razionalizzare alcuni aspetti della vita sia il modo migliore per riuscire ad affrontare tutti i temi
+          importanti.
+
+        </div>
+
+        <img class="immagine_2" src="/immagini/Olivia.png">
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi parlargliene..
+      </div>
+
+
+
+      <div class="text1_position reveal">
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+      </div>
+
+      <div class="text1_position reveal">
+        <div class="sinistra_padding text_domanda qa_container_1 path5">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="destra_padding text_risposta qa_container_2 path6">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+      <div class="text1_position reveal">
+
+
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi saperne di più..
+      </div>
+
+      <div class="link_position reveal">
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Cosa vuol dire morire?
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+
+      <div class="blokko">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="title little black reveal">
+        Se vuole una storia..
+      </div>
+
+
+      <div class="immagine_libro reveal">
+        <img src="/immagini/mockup/mockup_martino_3.png">
+
+      </div>
+
+
+    </div>
+    <div id="gender" class="schedaLibro">
+      <div class="distintivo">
+        <img src="/immagini/distintivi/distintivo gender.png">
+      </div>
+      <div class="title little black reveal">
+        Omosessualità
+      </div>
+      <div class="scheda_container reveal">
+        <div class="text_scheda">
+
+          TaBÙM vuole parlare ai bambini di tche spesso i più grandi hanno paura di affrontare. Crediamo che aiutarli a comprendere e razionalizzare alcuni aspetti della vita sia il modo migliore per riuscire ad affrontare tutti i temi
+          importanti.
+
+        </div>
+
+        <img class="immagine_2" src="/immagini/Olivia.png">
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi parlargliene..
+      </div>
+
+
+
+      <div class="text1_position reveal">
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+      </div>
+
+      <div class="text1_position reveal">
+        <div class="sinistra_padding text_domanda qa_container_1 path5">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="destra_padding text_risposta qa_container_2 path6">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+      <div class="text1_position reveal">
+
+
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi saperne di più..
+      </div>
+
+      <div class="link_position reveal">
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Cosa vuol dire morire?
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="blokko">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="title little black reveal">
+        Se vuole una storia..
+      </div>
+
+
+      <div class="immagine_libro reveal">
+        <img src="/immagini/mockup/mockup_martino_2.png">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="psicologo" class="schedaLibro">
+      <div class="distintivo">
+        <img src="/immagini/distintivi/distintivo psicologo.png">
+      </div>
+      <div class="title little black reveal">
+        Psicologo
+      </div>
+      <div class="scheda_container reveal">
+        <div class="text_scheda">
+
+          TaBÙM vuole parlare ai bambini di tche spesso i più grandi hanno paura di affrontare. Crediamo che aiutarli a comprendere e razionalizzare alcuni aspetti della vita sia il modo migliore per riuscire ad affrontare tutti i temi
+          importanti.
+
+        </div>
+
+        <img class="immagine_2" src="/immagini/Olivia.png">
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi parlargliene..
+      </div>
+
+
+
+      <div class="text1_position reveal">
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+      </div>
+
+      <div class="text1_position reveal">
+        <div class="sinistra_padding text_domanda qa_container_1 path5">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="destra_padding text_risposta qa_container_2 path6">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+      <div class="text1_position reveal">
+
+
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi saperne di più..
+      </div>
+
+      <div class="link_position reveal">
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Cosa vuol dire morire?
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+      <div class="blokko">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="title little black reveal">
+        Se vuole una storia..
+      </div>
+
+
+      <div class="immagine_libro reveal">
+        <img src="/immagini/mockup/mockup_martino_4.png">
+
+      </div>
+
+
+
+
+
+    </div>
+    <div id="abusi" class="schedaLibro">
+      <div class="distintivo">
+        <img src="/immagini/distintivi/distintivo abusi.png">
+      </div>
+      <div class="title little black reveal">
+        Abusi
+      </div>
+      <div class="scheda_container reveal">
+        <div class="text_scheda">
+
+          TaBÙM vuole parlare ai bambini di tche spesso i più grandi hanno paura di affrontare. Crediamo che aiutarli a comprendere e razionalizzare alcuni aspetti della vita sia il modo migliore per riuscire ad affrontare tutti i temi
+          importanti.
+
+        </div>
+
+        <img class="immagine_2" src="/immagini/Olivia.png">
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi parlargliene..
+      </div>
+
+
+
+      <div class="text1_position reveal">
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+      </div>
+
+      <div class="text1_position reveal">
+        <div class="sinistra_padding text_domanda qa_container_1 path5">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="destra_padding text_risposta qa_container_2 path6">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+      <div class="text1_position reveal">
+
+
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi saperne di più..
+      </div>
+
+      <div class="link_position reveal">
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Cosa vuol dire morire?
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="blokko">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="title little black reveal">
+        Se vuole una storia..
+      </div>
+
+
+      <div class="immagine_libro reveal">
+        <img src="/immagini/mockup/mockup_martino_1.png">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="droga" class="schedaLibro">
+      <div class="distintivo">
+        <img src="/immagini/distintivi/distintivo droga.png">
+      </div>
+      <div class="title little black reveal">
+        Droga
+      </div>
+      <div class="scheda_container reveal">
+        <div class="text_scheda">
+
+          TaBÙM vuole parlare ai bambini di tche spesso i più grandi hanno paura di affrontare. Crediamo che aiutarli a comprendere e razionalizzare alcuni aspetti della vita sia il modo migliore per riuscire ad affrontare tutti i temi
+          importanti.
+
+        </div>
+
+        <img class="immagine_2" src="/immagini/Olivia.png">
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi parlargliene..
+      </div>
+
+
+
+      <div class="text1_position reveal">
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+      </div>
+
+      <div class="text1_position reveal">
+        <div class="sinistra_padding text_domanda qa_container_1 path5">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="destra_padding text_risposta qa_container_2 path6">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+      <div class="text1_position reveal">
+
+
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi saperne di più..
+      </div>
+
+      <div class="link_position reveal">
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Cosa vuol dire morire?
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="blokko">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="title little black reveal">
+        Se vuole una storia..
+      </div>
+
+
+      <div class="immagine_libro reveal">
+        <img src="/immagini/mockup/mockup_martino_4.png">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="sesso" class="schedaLibro">
+      <div class="distintivo">
+        <img src="/immagini/distintivi/distintivo sesso.png">
+      </div>
+      <div class="title little black reveal">
+        Sesso
+      </div>
+      <div class="scheda_container reveal">
+        <div class="text_scheda">
+
+          TaBÙM vuole parlare ai bambini di tche spesso i più grandi hanno paura di affrontare. Crediamo che aiutarli a comprendere e razionalizzare alcuni aspetti della vita sia il modo migliore per riuscire ad affrontare tutti i temi
+          importanti.
+
+        </div>
+
+        <img class="immagine_2" src="/immagini/Olivia.png">
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi parlargliene..
+      </div>
+
+
+
+      <div class="text1_position reveal">
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+      </div>
+
+      <div class="text1_position reveal">
+        <div class="sinistra_padding text_domanda qa_container_1 path5">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="destra_padding text_risposta qa_container_2 path6">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+      <div class="text1_position reveal">
+
+
+        <div class="destra_padding text_domanda qa_container_1 path3">
+          Cosa vuol dire morire?
+        </div>
+
+        <div class="sinistra_padding text_risposta qa_container_2 path4">
+          Noi di taBÙM crediamo che l’educazione dei più piccoli sia di
+        </div>
+
+
+      </div>
+
+
+      <div class="title little black reveal">
+        Se vuoi saperne di più..
+      </div>
+
+      <div class="link_position reveal">
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Cosa vuol dire morire?
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_sx text_link link_container path_link">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+        <div class="shadow_link">
+          <div class="link_padding_dx text_link link_container path_link_reverse">
+
+            Per capire.. <br> come affrontare il lutto
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="blokko">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+      <div class="title little black reveal">
+        Se vuole una storia..
+      </div>
+
+
+      <div class="immagine_libro reveal">
+        <img src="/immagini/mockup/mockup_martino_3.png">
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <img class="contatti_img hide" src="/immagini/prato fondale sito2.png">
+    <div class="contatti hide">
+      <div class="">
+
+      </div>
+      <img class="facebook" src="/immagini/contatti/facebook.png">
+      <img class="mail" src="/immagini/contatti/mail.png">
+      <img class="insta" src="/immagini/contatti/insta.png">
+      <div class="">
+        taBùm editore <br> Via G. Candiani, 72 <br>20158, Milano, MI
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+
+  <div id="nav-placeholder">
+
+  </div>
+
+
+  <!-- TRIANGOLO LINK, CHI SIAMO TESTO 1 -->
+
+  <svg>
+
+
+    <clipPath id="svgPath3" clipPathUnits="objectBoundingBox">
+      <path d="M0.451,0L0.392,1l0.512-0.245L0.884,0.092L0.451,0z" />
+    </clipPath>
+
+    <clipPath id="svgPath4" clipPathUnits="objectBoundingBox">
+      <path d="M0.108,0L0.05,0.909L0.763,1L0.78,0.085L0.108,0z" />
+    </clipPath>
+
+    <clipPath id="svgPath5" clipPathUnits="objectBoundingBox">
+      <path d="M0.091,0.092L0.064,0.755L0.723,1L0.647,0L0.091,0.092z" />
+    </clipPath>
+
+    <clipPath id="svgPath6" clipPathUnits="objectBoundingBox">
+      <path d="M0.212,0L0.148,0.909L0.933,1l0.018-0.915L0.212,0z" />
+    </clipPath>
+    <clipPath id="triangolo" clipPathUnits="objectBoundingBox">
+      <path d="M0,0.995l0.06-0.99L1,0.495L0,0.995z" />
+    </clipPath>
+
+    <clipPath id="triangolo_reverse" clipPathUnits="objectBoundingBox">
+      <path d="M1,0.005l-0.06,0.99L0,0.505L1,0.005z" />
+    </clipPath>
+  </svg>
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+
+</html>
