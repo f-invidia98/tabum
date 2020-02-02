@@ -27,19 +27,16 @@ var tween1 = new TimelineMax()
     left: "35%",
     scale: 2
   }, 0, 0)
-  .staggerTo(objecto[0], 100, {
+  .staggerTo(objecto[0], 50, {
     scale: 2
   }, 2, "+=2")
-  .staggerTo(objecto[0], 100, {
-    scale: 2
-  }, 2, "+=0")
-  .staggerTo(nome_pers[0], 2, {
+  .staggerTo(nome_pers[0], 5, {
     left: "0%"
   }, 2, "+=2")
-  .staggerTo(objecto[1], 2, {
+  .staggerTo(objecto[1], 50, {
     scale: 2
-  }, 2, "+=0")
-  .staggerTo(objecto[0], 2, {
+  }, 0, "+=0")
+  .staggerTo(objecto[0], 10, {
     scale: 1
   }, 2, "+=2")
   .staggerTo(objecto[1], 2, {
@@ -48,7 +45,7 @@ var tween1 = new TimelineMax()
   .staggerTo(objecto[0], 2, {
     left: "0%"
   }, 2, "+=2")
-  .staggerTo(objecto[0], 2, {
+  .staggerTo(objecto[0], 10, {
     left: "-7%"
   }, 2, "+=2")
   .staggerTo(nome_pers[0], 4, {
@@ -72,32 +69,35 @@ var tween2 = new TimelineMax()
     left: "14%",
     scale: 1
   }, 2, "+=2")
-  .staggerTo(objecto[3], 2, {
+  .staggerTo(objecto[3], 10, {
     left: "35%",
     scale: 0
   }, 2, "+=0")
-  .staggerTo(objecto[2], 2, {
-    scale: 2
-  }, 2, "+=2")
-  .staggerTo(objecto[2], 100, {
+  .staggerTo(objecto[2], 25, {
     scale: 2
   }, 2, "+=0")
+  .staggerTo(objecto[2], 25, {
+    scale: 2
+  }, 0, "+=0")
   .staggerTo(nome_pers[1], 2, {
     left: "0%"
-  }, 2, "+=0")
-  .staggerTo(objecto[3], 2, {
+  }, 0, "+=2")
+  .staggerTo(objecto[3], 25, {
     scale: 2
-  }, 2, "+=0")
-  .staggerTo(objecto[2], 2, {
+  }, 0, "+=0")
+  .staggerTo(objecto[3], 25, {
+    scale: 2
+  }, 0, "+=0")
+  .staggerTo(objecto[2], 10, {
     scale: 1
-  }, 2, "+=2")
+  }, 2, "+=0")
   .staggerTo(objecto[3], 2, {
     scale: 0
   }, 2, "+=0")
   .staggerTo(objecto[2], 2, {
     left: "5%"
   }, 2, "+=2")
-  .staggerTo(objecto[2], 2, {
+  .staggerTo(objecto[2], 10, {
     left: "3%"
   }, 2, "+=2")
   .staggerTo(nome_pers[1], 4, {
@@ -122,13 +122,13 @@ var tween3 = new TimelineMax()
     left: "35%",
     scale: 0
   }, 2, 4)
-  .staggerTo(objecto[4], 6, {
+  .staggerTo(objecto[4], 50, {
     scale: 1.8
   }, 2, 6)
   .staggerTo(nome_pers[2], 2, {
     left: "0%"
   }, 2, 6)
-  .staggerTo(objecto[5], 2, {
+  .staggerTo(objecto[5], 50, {
     scale: 2
   }, 2, 6)
   .staggerTo(objecto[5], 100, {
@@ -199,23 +199,23 @@ var offset = window.innerHeight;
 
 var scene1 = new ScrollMagic.Scene({
     triggerElement: ".trigger",
-    duration: offset/2
+    duration: offset
   })
   .setTween(tween1)
   .addTo(controller);
 
 var scene2 = new ScrollMagic.Scene({
     triggerElement: ".trigger",
-    duration: offset/2,
-    offset: offset/2
+    duration: offset,
+    offset: offset
   })
   .setTween(tween2)
   .addTo(controller);
 
 var scene3 = new ScrollMagic.Scene({
     triggerElement: ".trigger",
-    duration: offset/2,
-    offset: offset
+    duration: offset,
+    offset: offset*2
   })
   .setTween(tween3)
   .addTo(controller);

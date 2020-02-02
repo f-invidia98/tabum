@@ -246,10 +246,11 @@ a {
 
 .very_little {
   padding: 1vw;
-  font-size: 1vw;
+  font-size: 0.9vw;
+  line-height: 1.2;
   margin-bottom: 1.2vw;
   color: white;
-  font-family: 'titlefont';
+  font-family: 'textfont';
 }
 
 /* GRANDEZZA FONT E POSITION */
@@ -261,8 +262,11 @@ a {
 
 .text_scheda {
   position: relative;
-  font-size: 2.3vw;
+  font-size: 1.9vw;
   height: auto;
+}
+.colonne{
+  column-count: 2;
 }
 
 .text_domanda {
@@ -644,7 +648,7 @@ a {
 
 .second-section {
   position: relative;
-  height: 200vh;
+  height: 300vh;
   padding-top: 7vw;
   padding-bottom: 15vw;
 }
