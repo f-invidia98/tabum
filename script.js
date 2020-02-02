@@ -30,6 +30,9 @@ var tween1 = new TimelineMax()
   .staggerTo(objecto[0], 100, {
     scale: 2
   }, 2, "+=2")
+  .staggerTo(objecto[0], 100, {
+    scale: 2
+  }, 2, "+=0")
   .staggerTo(nome_pers[0], 2, {
     left: "0%"
   }, 2, "+=2")
@@ -76,6 +79,9 @@ var tween2 = new TimelineMax()
   .staggerTo(objecto[2], 2, {
     scale: 2
   }, 2, "+=2")
+  .staggerTo(objecto[0], 100, {
+    scale: 2
+  }, 2, "+=0")
   .staggerTo(nome_pers[1], 2, {
     left: "0%"
   }, 2, "+=0")
@@ -124,7 +130,10 @@ var tween3 = new TimelineMax()
   }, 2, 6)
   .staggerTo(objecto[5], 2, {
     scale: 2
-  }, 2, 6);
+  }, 2, 6)
+  .staggerTo(objecto[0], 100, {
+    scale: 2
+  }, 2, "+=0");
 
 
 
