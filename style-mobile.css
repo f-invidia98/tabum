@@ -79,7 +79,7 @@ a{
   top: 0;
   height: 86vh;
   margin-top: -8vh;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
   justify-content: space-around;
   padding: 3vh;
@@ -89,7 +89,7 @@ a{
 
 .tabu_box_1 img{
   height: 10vh;
-  padding: 18px;
+  padding: 2vw;
 }
 .tabu_box_2{
   width: 85%;
