@@ -18,7 +18,7 @@ body{
   overflow-x: hidden;
   /* background-position: bottom; */
   background-image: url('immagini/tutto cielo fondale sito.png');
-  background-size: cover;
+  /* background-size: cover; */
   height: 100%;
   font-family: "textfont";
   line-height: 1.3;
