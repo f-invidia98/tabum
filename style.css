@@ -267,6 +267,7 @@ a {
 }
 .colonne{
   column-count: 2;
+  width: 100%;
 }
 
 .text_domanda {
@@ -403,6 +404,14 @@ a {
   clip-path: url(#svgPath8);
 }
 
+.path9 {
+  clip-path: url(#svgPath9);
+}
+
+.path10 {
+  clip-path: url(#svgPath10);
+}
+
 .path_link {
   clip-path: url(#triangolo);
 }
@@ -505,6 +514,23 @@ a {
   padding-top: 7vw;
 }
 
+.schedaLibro .text1_position{
+  display: flex;
+  flex-direction: column;
+}
+
+.schedaLibro .text1_position .destra_padding{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+
+.schedaLibro .text1_position .sinistra_padding{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
 .scheda_container {
   display: flex;
   justify-content: space-between;
@@ -513,10 +539,7 @@ a {
   padding-bottom: 17vw;
 }
 
-.scheda_container div {
-  /* display: flex; */
-  width: 45%;
-}
+
 
 .mockup img {
   width: 100%;

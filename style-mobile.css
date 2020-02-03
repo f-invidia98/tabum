@@ -191,6 +191,12 @@ a{
 .contatti img{
   width: 15%;
 }
+.contatti a{
+  font-size: 3vw;
+  margin-left: 1.3vw;
+  color: white;
+}
+
 .contatti div{
   font-size: 3vw;
   margin-left: 1.3vw;
@@ -303,7 +309,7 @@ a{
 
   .title_mobile{
   position: relative;
-  font-size: 10.3vw;
+  font-size: 9.7vw;
   color: white;
   font-family: 'titlefont';
   line-height: 1;
@@ -320,11 +326,15 @@ a{
   }
 
   .very_little{
-    padding: 1vw;
-    font-size: 4vw;
+
+    font-size: 3vw;
     margin-bottom: 1.2vw;
     color: white;
     font-family: 'textfont';
+    padding-left: 12vw;
+    padding-right:5vw;
+    padding-top: 3.5vw;
+    padding-bottom:2vw;
   }
 
   /* GRANDEZZA FONT E POSITION */
@@ -362,7 +372,7 @@ a{
   .text_link{
     font-family: 'titlefont';
     position: relative;
-    font-size: 3.12vw;
+    font-size: 2.6vw;
     margin-bottom: -5vw;
 
 
@@ -438,10 +448,10 @@ a{
 
   /* CHI SIAMO, PADDING */
   .text1_padding{
-    padding-left: 15.5vw;
-    padding-right: 17vw;
-    padding-top: 4vw;
-    padding-bottom: 6vw;
+    padding-left: 17vw;
+    padding-right: 27vw;
+    padding-top: 7vw;
+    padding-bottom: 13vw;
   }
 
   .text2_padding{
@@ -536,11 +546,11 @@ a{
 
   }
   .mobile-flex div{
-    width: 60vw;
+    width: 40vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vw;
+    height: 27vw;
 
   }
 
@@ -558,7 +568,7 @@ a{
 
   .testi div{
     width: 65vw;
-    margin-right: 30vw;
+    margin-right: 35vw;
   }
   .testi a{
     width: 50vw;
@@ -761,8 +771,8 @@ a{
     .sinistra_padding{
       padding-left: 11vw;
       padding-right: 14vw;
-      padding-top: 6vw;
-      padding-bottom: 8vw;
+      padding-top: 8vw;
+      padding-bottom: 14vw;
       text-align: left;
       width: 50vw;
     }
@@ -772,8 +782,8 @@ a{
       padding-right: 12vw;
       padding-top: 7vw;
       padding-bottom: 6vw;
-      /* text-align: right; */
-      width: 45vw;
+      text-align: right;
+      max-width: 50vw;
     }
 
     /* LINK PADDING PER TABù  */
@@ -783,8 +793,9 @@ a{
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      height: 25vw;
+      height: 32vw;
       text-align: left;
+      padding-right: 27%;
     }
 
     .link_padding_dx{
@@ -793,8 +804,8 @@ a{
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-      height: 25vw;
-
+      height: 32vw;
+      padding-left: 27%;
       text-align: right;
     }
 

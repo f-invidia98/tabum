@@ -219,7 +219,23 @@ var scene4 = new ScrollMagic.Scene({
   .setTween(tween4)
   .addTo(controller);
 
+  $(".facebook").click(
+    function(){
+      window.location = "https://www.facebook.com/tabumeditore-112538223638640/?__tn__=%2Cd%2CP-R&eid=ARB6p89GdXZP7grO5fU2KVXHTjAX3jCcMX0wMSnSv-6dVuZ5d2TUPYOMPKEKHSRzsxynsNc99DJ7Rm3r"
+    }
+  )
 
+  $(".insta").click(
+    function(){
+      window.location = "https://www.instagram.com/tabum.editore/"
+    }
+  )
+
+  $(".mail").click(
+    function(){
+      window.location = "mailto:tabum.editore@gmail.com"
+    }
+  )
 
 
 $(function() {
